@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:spontit/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
-  runApp(SponTITPortfolio());
+  runApp(SponTITApp());
 }
 
 class SponTITPortfolio extends StatelessWidget {
@@ -290,6 +291,23 @@ class PortfolioHomePage extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
       ),
+    );
+  }
+}
+
+
+class SponTITApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'SponT IT',
+      theme: ThemeData(
+        fontFamily: 'Poppins',
+        brightness: Brightness.light,
+        primarySwatch: Colors.deepPurple,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
