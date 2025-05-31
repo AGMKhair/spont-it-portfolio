@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class ServicesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final isMobile = MediaQuery.of(context).size.width < 800;
+    final isMobile = MediaQuery.of(context).size.width < 600;
+    final isTab = MediaQuery.of(context).size.width < 900;
 
     return Padding(
       padding: const EdgeInsets.all(32.0),
@@ -13,10 +14,10 @@ class ServicesSection extends StatelessWidget {
           Text("Our Services", style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
           SizedBox(height: 16),
           GridView.count(
-            crossAxisCount: isMobile ? 1 : 3,
+            crossAxisCount: isMobile ?  1  : isTab ? 3 : 4,
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
-            childAspectRatio: MediaQuery.sizeOf(context).width * (isMobile ? 0.006 : 0.0017),
+            childAspectRatio: MediaQuery.sizeOf(context).width * (isMobile ? 0.005 : isTab ?  0.0011 : 0.0009),
             mainAxisSpacing: 20,
             crossAxisSpacing: 20,
             children: [
