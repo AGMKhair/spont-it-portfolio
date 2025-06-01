@@ -52,8 +52,9 @@ class PortfolioHomePage extends StatelessWidget {
             _servicesSection(),
             _projectsSection(),
             _clientsSection(),
-            _contactSection(),
             _footer(),
+            _contactSection(),
+
           ],
         ),
       ),
@@ -287,7 +288,7 @@ class PortfolioHomePage extends StatelessWidget {
       color: Colors.indigo[900],
       child: const Center(
         child: Text(
-          '© 2025 SponT IT. All rights reserved.',
+          '© ${DateTime.monthsPerYear} SponT IT. All rights reserved.',
           style: TextStyle(color: Colors.white),
         ),
       ),

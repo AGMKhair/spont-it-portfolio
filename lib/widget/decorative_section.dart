@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spontit/colors_util.dart';
+import 'package:spontit/util/colors_util.dart';
 
 class DecorativeSection extends StatelessWidget {
   final Widget child;
