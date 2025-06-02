@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spontit/util/colors_util.dart';
-import 'package:spontit/image.dart';
+import 'package:spontit/util/image.dart';
 import 'package:spontit/widget/decorative_section.dart';
 import 'package:spontit/widget/tilting_image.dart';
 

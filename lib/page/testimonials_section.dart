@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:spontit/widget/hover_card.dart';
+import 'package:spontit/widget/hover_widget.dart';
 
 class TestimonialsSection extends StatelessWidget {
   @override
@@ -20,9 +22,9 @@ class TestimonialsSection extends StatelessWidget {
             mainAxisSpacing: 20,
             childAspectRatio: 0.95,
             children: [
-              testimonialCard("SponT IT delivered our project ahead of schedule with exceptional quality.", "Sarah J.", "CEO, RetailCorp"),
-              testimonialCard("Their support team is responsive and really understands our needs.", "Ahmed K.", "Founder, EduSoft"),
-              testimonialCard("Great communication and impressive technical skills. Highly recommended!", "Lina M.", "CTO, MedTrack"),
+              HoverWidget(child: testimonialCard("SponT IT delivered our project ahead of schedule with exceptional quality.", "Sarah J.", "CEO, RetailCorp")),
+              HoverWidget(child: testimonialCard("Their support team is responsive and really understands our needs.", "Ahmed K.", "Founder, EduSoft")),
+              HoverWidget(child: testimonialCard("Great communication and impressive technical skills. Highly recommended!", "Lina M.", "CTO, MedTrack")),
             ],
           ),
         ],

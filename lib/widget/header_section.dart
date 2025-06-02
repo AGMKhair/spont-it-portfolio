@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:spontit/util/image.dart';
 import 'package:spontit/util/colors_util.dart';
-import 'package:spontit/image.dart';
 import 'package:spontit/widget/nav_button.dart';
 
 class Header extends StatelessWidget {

@@ -71,6 +71,7 @@ class ServicesSection extends StatelessWidget {
                   desc: "Clean, functional, and user-first interfaces."),
             ],
           ),
+          SizedBox(height: 20),
           Button(
             text: 'View All Services',
             arrow: true,

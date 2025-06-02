@@ -8,6 +8,9 @@ class ColorsUtil {
   static final Shader textGradient = LinearGradient(
     colors: <Color>[Color(0xff2b46e8), Color(0xff770e98)],
   ).createShader(Rect.fromLTWH(300.0, 0.0, 300.0, 200.0));
+  static final Shader textGradient50 = LinearGradient(
+    colors: <Color>[Color(0xff2b46e8), Color(0xff770e98)],
+  ).createShader(Rect.fromLTWH(300.0, 0.0, 200.0, 200.0));
 
   static Gradient containerGradient = new LinearGradient(colors: [Color(0xff2b46e8), Color(0xff770e98)]);
   static Gradient buttonGradient = new LinearGradient(colors: [Color(0xff2b46e8), Color(0xff770e98)]);

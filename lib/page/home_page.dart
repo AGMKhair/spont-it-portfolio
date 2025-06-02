@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:spontit/util/colors_util.dart';
-import 'package:spontit/contact_section.dart';
-import 'package:spontit/image.dart';
-import 'package:spontit/sersvice_section.dart';
-import 'package:spontit/why_choose_us_section.dart';
-import 'package:spontit/widget/decorative_section.dart';
+import 'package:spontit/page/contact_section.dart';
+import 'package:spontit/page/service_section.dart';
+import 'package:spontit/page/why_choose_us_section.dart';
 import 'package:spontit/widget/footer_section.dart';
 import 'package:spontit/widget/header_section.dart';
 import 'package:spontit/widget/home_top_section.dart';
-import 'package:spontit/widget/tilting_image.dart';
 
 import 'testimonials_section.dart';
 
