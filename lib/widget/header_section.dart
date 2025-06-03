@@ -4,12 +4,14 @@ import 'package:spontit/util/colors_util.dart';
 import 'package:spontit/widget/nav_button.dart';
 
 class Header extends StatelessWidget {
+  const Header({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration:
-      new BoxDecoration(gradient: ColorsUtil.headerGradient, boxShadow: [
-        new BoxShadow(
+      BoxDecoration(gradient: ColorsUtil.headerGradient, boxShadow: const [
+        BoxShadow(
           color: Colors.white,
           blurRadius: 20.0,
           spreadRadius: 1.0,
@@ -25,7 +27,7 @@ class Header extends StatelessWidget {
               width: 120,
             ),
             // Text(" SponT IT", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold,color: Colors.white)),
-            Expanded(
+            const Expanded(
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -40,7 +42,7 @@ class Header extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text("Get Quote"),
+              child: const Text("Get Quote"),
             ),
           ],
         ),

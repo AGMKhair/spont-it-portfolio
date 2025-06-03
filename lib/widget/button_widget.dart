@@ -14,7 +14,7 @@ class Button extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(vertical: SizeUtil.margin_15,horizontal: SizeUtil.margin_10),
       width: width,
-      decoration: new BoxDecoration(
+      decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
         gradient: ColorsUtil.buttonGradient,
       ),

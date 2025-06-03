@@ -6,6 +6,8 @@ class WhyChooseUsSection extends StatelessWidget {
 
    var isMobile;
    var isTab;
+
+  WhyChooseUsSection({super.key});
   @override
   Widget build(BuildContext context) {
      isMobile = MediaQuery.of(context).size.width < 600;

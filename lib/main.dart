@@ -3,10 +3,12 @@ import 'package:spontit/page/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
-  runApp(SponTITApp());
+  runApp(const SponTITApp());
 }
 
 class SponTITPortfolio extends StatelessWidget {
+  const SponTITPortfolio({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +22,8 @@ class SponTITPortfolio extends StatelessWidget {
 
 class PortfolioHomePage extends StatelessWidget {
   final ScrollController _scrollController = ScrollController();
+
+  PortfolioHomePage({super.key});
 
   void _scrollTo(double offset) {
     _scrollController.animateTo(
@@ -72,10 +76,10 @@ class PortfolioHomePage extends StatelessWidget {
     return Container(
       height: 600,
       color: Colors.indigo,
-      child: Center(
+      child: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Text('Welcome to SponT IT',
                 style: TextStyle(fontSize: 48, color: Colors.white)),
             SizedBox(height: 16),
@@ -94,9 +98,9 @@ class PortfolioHomePage extends StatelessWidget {
       height: 600,
       color: Colors.white,
       padding: const EdgeInsets.all(40),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
+        children: [
           Text('About Us', style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold)),
           SizedBox(height: 20),
           Text(
@@ -194,7 +198,7 @@ class PortfolioHomePage extends StatelessWidget {
                 const SizedBox(height: 10),
                 Text(title, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 10),
-                Text('Click to view project', textAlign: TextAlign.center),
+                const Text('Click to view project', textAlign: TextAlign.center),
               ],
             ),
           ),
@@ -208,9 +212,9 @@ class PortfolioHomePage extends StatelessWidget {
       height: 600,
       color: Colors.grey[100],
       padding: const EdgeInsets.all(40),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
+        children: [
           Text('Our Clients', style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold)),
           SizedBox(height: 20),
           Text(
@@ -298,6 +302,8 @@ class PortfolioHomePage extends StatelessWidget {
 
 
 class SponTITApp extends StatelessWidget {
+  const SponTITApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -308,7 +314,7 @@ class SponTITApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
       ),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

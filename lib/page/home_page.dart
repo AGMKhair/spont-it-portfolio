@@ -9,6 +9,8 @@ import 'package:spontit/widget/home_top_section.dart';
 import 'testimonials_section.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     final isMobile = MediaQuery.of(context).size.width < 600;

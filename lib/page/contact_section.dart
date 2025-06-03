@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class ContactSection extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
+  ContactSection({super.key});
+
   @override
   Widget build(BuildContext context) {
     final isMobile = MediaQuery.of(context).size.width < 800;

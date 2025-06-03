@@ -4,6 +4,8 @@ import 'package:spontit/widget/button_widget.dart';
 import 'package:spontit/widget/hover_card.dart';
 
 class ServicesSection extends StatelessWidget {
+  const ServicesSection({super.key});
+
   @override
   Widget build(BuildContext context) {
     final isMobile = MediaQuery.of(context).size.width < 600;

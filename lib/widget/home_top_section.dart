@@ -8,7 +8,7 @@ class HeroSection extends StatelessWidget {
   final bool isMobile;
   final bool isTab;
 
-  const HeroSection({required this.isMobile, required this.isTab});
+  const HeroSection({super.key, required this.isMobile, required this.isTab});
 
   @override
   Widget build(BuildContext context) {
@@ -42,19 +42,19 @@ class HeroSection extends StatelessWidget {
 
   List<Widget> _heroContent() {
     return [
-      Text("Give Your Needs",
+      const Text("Give Your Needs",
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.w900)),
       Text("Take Your Technical Solutions",
           style: TextStyle(
               fontSize: 40,
               fontWeight: FontWeight.bold,
               foreground: Paint()..shader = ColorsUtil.linearGradient)),
-      SizedBox(height: 20),
-      Text(
+      const SizedBox(height: 20),
+      const Text(
         "We develop customized software, mobile apps, and websites to accelerate your business success.",
         style: TextStyle(fontSize: 18, color: Colors.black87),
       ),
-      SizedBox(height: 20),
+      const SizedBox(height: 20),
       Row(
         children: [
           Container(
@@ -62,7 +62,7 @@ class HeroSection extends StatelessWidget {
               borderRadius: BorderRadius.circular(10.0),
               gradient: ColorsUtil.containerGradient,
             ),
-            padding: EdgeInsets.symmetric(vertical: 15),
+            padding: const EdgeInsets.symmetric(vertical: 15),
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.transparent,
@@ -71,7 +71,7 @@ class HeroSection extends StatelessWidget {
                   shadowColor: Colors.transparent,
                 ),
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   "Get a Free Consultation",
                   style: TextStyle(
                       color: Colors.white,
@@ -79,18 +79,18 @@ class HeroSection extends StatelessWidget {
                       fontWeight: FontWeight.w900),
                 )),
           ),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           OutlinedButton(
               style: OutlinedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
-                side: BorderSide(
+                side: const BorderSide(
                     color: Colors.deepPurple), // Optional: for visible border
               ),
               onPressed: () {},
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 20.0),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 20.0),
                 child: Text(
                   "View Our Work",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900),
@@ -98,14 +98,14 @@ class HeroSection extends StatelessWidget {
               )),
         ],
       ),
-      SizedBox(height: 40),
+      const SizedBox(height: 40),
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           _stat("50+", "Projects Done", Colors.indigoAccent),
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           _stat("3+", "Years Experience", Colors.deepPurple),
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           _stat("24/7", "Support", Colors.red),
         ],
       ),
@@ -119,7 +119,7 @@ class HeroSection extends StatelessWidget {
         Text(value,
             style: TextStyle(
                 fontSize: 24, fontWeight: FontWeight.bold, color: colors)),
-        Text(label, style: TextStyle(fontSize: 14, color: Colors.black54)),
+        Text(label, style: const TextStyle(fontSize: 14, color: Colors.black54)),
       ],
     );
   }

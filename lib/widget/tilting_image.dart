@@ -5,10 +5,10 @@ class TiltingImage extends StatefulWidget {
   final double width;
 
   const TiltingImage({
-    Key? key,
+    super.key,
     required this.imagePath,
     required this.width,
-  }) : super(key: key);
+  });
 
   @override
   State<TiltingImage> createState() => _TiltingImageState();

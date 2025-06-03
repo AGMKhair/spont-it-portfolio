@@ -4,7 +4,7 @@ import 'package:spontit/util/colors_util.dart';
 class DecorativeSection extends StatelessWidget {
   final Widget child;
 
-  const DecorativeSection({Key? key, required this.child}) : super(key: key);
+  const DecorativeSection({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {

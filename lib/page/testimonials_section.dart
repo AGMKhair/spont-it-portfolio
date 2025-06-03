@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:spontit/widget/hover_card.dart';
 import 'package:spontit/widget/hover_widget.dart';
 
 class TestimonialsSection extends StatelessWidget {
+  const TestimonialsSection({super.key});
+
   @override
   Widget build(BuildContext context) {
     final isMobile = MediaQuery.of(context).size.width < 800;
